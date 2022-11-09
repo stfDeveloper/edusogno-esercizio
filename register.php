@@ -14,20 +14,26 @@ $prevDupEmail = mysqli_query($connection, $e);
 $sql = "INSERT INTO utenti (nome, cognome, email, password) VALUES ('$nome','$cognome','$email','$encrypted')";
 
 if (mysqli_num_rows($prevDupEmail) > 0) {
-        ?><section>
+        ?>
+        <section>
             <?php echo "($email) E' già in uso"; ?>
-            <h1>E' la tua email?<a href="login.html">ACCEDI</a></h1>
+            <h1>
+                E' la tua email?
+                <a href="login.html">ACCEDI</a>
+            </h1>
             <br>
             <h4>o</h4>
-            <h4><a href="index.php">REGISTRATI</a></h4> 
+            <h4>
+                <a href="index.php">REGISTRATI</a>
+            </h4> 
         </section> 
          <?php
     }else {
          if ($connection->query($sql) === true) { 
-    echo "success ";
-    }else{
-    echo "error";
-    } 
+            echo "success ";
+        }else{
+        echo "error";
+        } 
 }
 ?>
 <style>
