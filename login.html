@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edusogno</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+    </header>
+    <section>
+      <h1 class="title">Hai già un'account?</h1>
+      <div class="card">
+        <form action="login.php" method="POST">
+          <label for="">Inserisci l'email</label>
+          <input
+            type="text"
+            placeholder="name@example.com"
+            name="email"
+            required
+          />
+
+          <label for="">Inserisci la password</label>
+          <input
+            type="password"
+            placeholder="Scrivila qui"
+            name="password"
+            required
+          />
+          <button type="submit">ACCEDI</button>
+          <a href="index.php">Non hai ancora un'account? <b>Registrati</b></a>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
