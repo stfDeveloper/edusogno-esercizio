@@ -29,8 +29,8 @@
                 <label for="password">Inserisci la password</label>
                     <input type="password" placeholder="Scrivila qui" id="password" name="password" required>
 
-            <button type="submit">REGISTRATI</button>
-            <a href="login.html">Hai già un'account? <b>Acccedi</b></a>
+                <button type="submit">REGISTRATI</button>
+                <a href="login.html">Hai già un'account? <b>Acccedi</b></a>
             </form>
         </div>
     </section>
